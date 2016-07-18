@@ -53,7 +53,6 @@ public class TestEngine  {
 	public void launchApp() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			driver.get(URL);
 			driver.manage().window().maximize();
 			  
 	

@@ -41,6 +41,7 @@ public class Driver {
       System.setProperty("atu.reporter.config", "src\\atu.properties");
     }
     public static WebDriver driver;
+    private static final String URL = "http://dev.asahitechnologies.com/badgeos/"; 
 	public static final String DRIVEREXCEL = "Automationdriver.xls";
 	public static final String RESULTEXCEL = "Autoresult.xls";   
 	public static final String WEBEXP = "WebDriver Exception is thrown"; 
@@ -57,13 +58,19 @@ public class Driver {
 	private void setAuthorInfoForReports() {
         ATUReports.setAuthorInfo("Automation Tester", Utils.getCurrentTime(),"1.0");
 	}
+	@BeforeClass
+	public void initialize(){
+		driver = new FirefoxDriver();
+		ATUReports.setWebDriver(driver);
+	 	ATUReports.indexPageDescription = "<br> Please change this <br/> <b>Can include Full set of HTML Tags</b>";
+	 	driver.close();
+	}
 	@BeforeMethod
 	public void init(){
 		driver = new FirefoxDriver();
 		//System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		//WebDriver driver = new ChromeDriver();
-		ATUReports.setWebDriver(driver);
-	 	ATUReports.indexPageDescription = "<br> Please change this <br/> <b>Can include Full set of HTML Tags</b>";
+		driver.get(URL);
 	}
 	@AfterMethod
 	public void close(){
@@ -121,12 +128,7 @@ public class Driver {
 	public void DriveExcel(String ShName){
 		setAuthorInfoForReports();
 		WriteExcel we = new WriteExcel();
-				try {                                                     
-					                                                                   
-			// driver = new FirefoxDriver();              
-			// dr.moveTheFile();           
-			//dr.openBrowser();  
-				try {
+			try {
 					ReadExcel re = new ReadExcel(driver);  
 					re.readExcelSheet(DRIVEREXCEL, ShName);             
 					 
@@ -157,15 +159,7 @@ public class Driver {
 					}  
 				Assert.fail();
 				}     
-				   
 		}	                      
-			catch (Exception e) {       
-       
-			e.printStackTrace();         
-			Assert.fail();
-		} 
-				
-	}
 	
 			 
 			
