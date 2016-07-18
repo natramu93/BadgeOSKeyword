@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="12" passed="12">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
     <line>
       <![CDATA[STEP1]]>
@@ -46,58 +46,17 @@
     <line>
       <![CDATA[STEP15]]>
     </line>
-    <line>
-      <![CDATA[STEP16]]>
-    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="98672" started-at="2016-07-18T07:36:40Z" finished-at="2016-07-18T07:38:19Z">
+  <suite name="Suite" duration-ms="96544" started-at="2016-07-18T09:05:48Z" finished-at="2016-07-18T09:07:25Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="98672" started-at="2016-07-18T07:36:40Z" finished-at="2016-07-18T07:38:19Z">
+    <test name="Test" duration-ms="96544" started-at="2016-07-18T09:05:48Z" finished-at="2016-07-18T09:07:25Z">
       <class name="pkge1.Driver">
-        <test-method status="PASS" signature="init()[pri:0, instance:pkge1.Driver@224aed64]" name="init" is-config="true" duration-ms="8674" started-at="2016-07-18T13:06:40Z" finished-at="2016-07-18T13:06:49Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:pkge1.Driver@2ef5e5e3]" name="init" is-config="true" duration-ms="9484" started-at="2016-07-18T14:35:48Z" finished-at="2016-07-18T14:35:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="test(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:pkge1.Driver@224aed64]" name="test" duration-ms="116" started-at="2016-07-18T13:06:49Z" data-provider="Driver" finished-at="2016-07-18T13:06:49Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[No]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Achievement Creation as Admin]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Achievement Creation as Admin]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="FAIL" signature="test(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:pkge1.Driver@224aed64]" name="test" duration-ms="87241" started-at="2016-07-18T13:06:49Z" data-provider="Driver" finished-at="2016-07-18T13:08:17Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Yes]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Register New User Account]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Register New User Account]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="FAIL" signature="Register_New_User_Account()[pri:2, instance:pkge1.Driver@2ef5e5e3]" name="Register_New_User_Account" duration-ms="86025" started-at="2016-07-18T14:35:58Z" finished-at="2016-07-18T14:37:24Z">
           <exception class="atu.testng.reports.exceptions.ATUReporterStepFailedException">
             <full-stacktrace>
               <![CDATA[[ATU Custom Reporter Step Failed Exception]
@@ -120,8 +79,9 @@
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
 	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.TestNG.privateMain(TestNG.java:1355)
-	at org.testng.TestNG.main(TestNG.java:1324)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
 ]]>
             </full-stacktrace>
           </exception> <!-- atu.testng.reports.exceptions.ATUReporterStepFailedException -->
@@ -172,242 +132,8 @@
               <![CDATA[STEP15]]>
             </line>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="test(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:pkge1.Driver@224aed64]" name="test" duration-ms="177" started-at="2016-07-18T13:08:17Z" data-provider="Driver" finished-at="2016-07-18T13:08:17Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[No]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Interactive Progress Map]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Confirm Interactive Progress Map Display for New User]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="test(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:pkge1.Driver@224aed64]" name="test" duration-ms="32" started-at="2016-07-18T13:08:17Z" data-provider="Driver" finished-at="2016-07-18T13:08:17Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[No]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[S1, Earn Achievement]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Navigate to S1, Earn Achievement]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="test(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:pkge1.Driver@224aed64]" name="test" duration-ms="34" started-at="2016-07-18T13:08:17Z" data-provider="Driver" finished-at="2016-07-18T13:08:17Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[No]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[S2, Submit Achievement]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Navigate to S2, Submit Achievement]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="test(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:pkge1.Driver@224aed64]" name="test" duration-ms="47" started-at="2016-07-18T13:08:17Z" data-provider="Driver" finished-at="2016-07-18T13:08:17Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[No]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Reject S2]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Rejecting S2 as admin]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="test(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:pkge1.Driver@224aed64]" name="test" duration-ms="52" started-at="2016-07-18T13:08:17Z" data-provider="Driver" finished-at="2016-07-18T13:08:17Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[No]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[S3, Submit Achievement]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Navigate to S3, Submit Achievement]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="test(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:pkge1.Driver@224aed64]" name="test" duration-ms="56" started-at="2016-07-18T13:08:17Z" data-provider="Driver" finished-at="2016-07-18T13:08:17Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[No]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Confirm S2]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Authenticate as Administrator, Confirm S2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="test(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:pkge1.Driver@224aed64]" name="test" duration-ms="62" started-at="2016-07-18T13:08:17Z" data-provider="Driver" finished-at="2016-07-18T13:08:17Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[No]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[earned in Student Profile]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Authenticate as User Confirm S1, S2, S3 earned in Student Profile, on Progress Map]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="test(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:pkge1.Driver@224aed64]" name="test" duration-ms="56" started-at="2016-07-18T13:08:17Z" data-provider="Driver" finished-at="2016-07-18T13:08:17Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[No]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Disable all BadgeOS Plugins]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Sequentially Disable all BadgeOS Plugins]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="test(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:pkge1.Driver@224aed64]" name="test" duration-ms="50" started-at="2016-07-18T13:08:17Z" data-provider="Driver" finished-at="2016-07-18T13:08:17Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[No]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Enable Plugins]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Sequentially Enable Plugins]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="FAIL" signature="test(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:pkge1.Driver@224aed64]" name="test" duration-ms="115" started-at="2016-07-18T13:08:17Z" data-provider="Driver" finished-at="2016-07-18T13:08:17Z">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-            <param index="1">
-              <value is-null="true"/>
-            </param>
-            <param index="2">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <exception class="atu.testng.reports.exceptions.ATUReporterStepFailedException">
-            <full-stacktrace>
-              <![CDATA[[ATU Custom Reporter Step Failed Exception]
-	at atu.testng.reports.listeners.ATUReportsListener.onTestSuccess(Unknown Source)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1690)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1670)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:696)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.TestNG.privateMain(TestNG.java:1355)
-	at org.testng.TestNG.main(TestNG.java:1324)
-]]>
-            </full-stacktrace>
-          </exception> <!-- atu.testng.reports.exceptions.ATUReporterStepFailedException -->
-          <reporter-output>
-            <line>
-              <![CDATA[STEP16]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="close()[pri:0, instance:pkge1.Driver@224aed64]" name="close" is-config="true" duration-ms="1673" started-at="2016-07-18T13:08:17Z" finished-at="2016-07-18T13:08:19Z">
+        </test-method> <!-- Register_New_User_Account -->
+        <test-method status="PASS" signature="close()[pri:0, instance:pkge1.Driver@2ef5e5e3]" name="close" is-config="true" duration-ms="1015" started-at="2016-07-18T14:37:24Z" finished-at="2016-07-18T14:37:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->

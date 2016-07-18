@@ -29,8 +29,8 @@ public class TestEngine  {
 	public WebDriver driver;
 	private static final String DELIM = "@"; 
 	private static final String URL = "http://dev.asahitechnologies.com/badgeos/"; 
-	public static final String RESULTEXCEL = "E:\\excel files\\Autoresult.xls";
-	public static final String DRIVEREXCEL = "E:\\excel files\\Automationdriver.xls";
+	public static final String RESULTEXCEL = "Autoresult.xls";
+	public static final String DRIVEREXCEL = "Automationdriver.xls";
 	//public static final String INPUTEXCEL = "D:\\karthee\\InputFiles\\Data1.xls";
 	public static final String INPUTEXCEL = "D:\\BadgeOsAutomationFiles\\Testdata.xls";
 	public static final String WEBEXP = "WebDriver Exception is thrown";

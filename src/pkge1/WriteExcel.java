@@ -15,7 +15,7 @@ import jxl.write.WriteException;
 
 public class WriteExcel { 
  public static final String NIL = "";
- public static final String RESULTEXCEL = "E:\\excel files\\Autoresult.xls"; 
+ public static final String RESULTEXCEL = "Autoresult.xls"; 
  public static final String IOEXP = "IO Exception is thrown";
  public static final String WRITEEXP = "Write Exception is thrown";
 

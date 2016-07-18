@@ -18,8 +18,8 @@ import atu.testng.reports.ATUReports;
 public class ReadExcel { 
 	WebDriver driver;
 	private static final String DELIM = "@";
-	public static final String DRIVEREXCEL = "E:\\excel files\\Automationdriver.xls";
-	public static final String RESULTEXCEL = "E:\\excel files\\Autoresult.xls";
+	public static final String DRIVEREXCEL = "Automationdriver.xls";
+	public static final String RESULTEXCEL = "Autoresult.xls";
 	public static final String WEBEXP = "WebDriver Exception is thrown";
 	public static final String EXP = "Unknown Exception is thrown";
 	public static final String THREADEXP = "UnInteruptted Exception is thrown";

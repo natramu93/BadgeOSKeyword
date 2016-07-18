@@ -34,11 +34,11 @@ import atu.testng.selenium.reports.CaptureScreen.ScreenshotOf;
 public class Driver {  
 	 //Set Property for ATU Reporter Configuration
     {
-      System.setProperty("atu.reporter.config", "C:\\Users\\NatarajanRamanathan\\NeonWorkspace\\BadgeOSKeyword\\src\\atu.properties");
+      System.setProperty("atu.reporter.config", "src\\atu.properties");
     }
     public static WebDriver driver;
-	public static final String DRIVEREXCEL = "E:\\excel files\\Automationdriver.xls";
-	public static final String RESULTEXCEL = "E:\\excel files\\Autoresult.xls";   
+	public static final String DRIVEREXCEL = "Automationdriver.xls";
+	public static final String RESULTEXCEL = "Autoresult.xls";   
 	public static final String WEBEXP = "WebDriver Exception is thrown"; 
 	public static final String EXP = "Unknown Exception is thrown";
 	public static final String THREADEXP = "UnInteruptted Exception is thrown"; 
