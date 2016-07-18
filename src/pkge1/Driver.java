@@ -13,6 +13,7 @@ import jxl.write.WriteException;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -55,9 +56,9 @@ public class Driver {
 	}
 	@BeforeClass
 	public void init(){
-		driver = new FirefoxDriver();
-		//System.setProperty("webdriver.chrome.driver", "C://Selenium//chromedriver.exe");
-		//WebDriver driver = new ChromeDriver();
+		//driver = new FirefoxDriver();
+		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
 		ATUReports.setWebDriver(driver);
 	 	ATUReports.indexPageDescription = "<br> Please change this <br/> <b>Can include Full set of HTML Tags</b>";
 	}
