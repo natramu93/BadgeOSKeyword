@@ -65,16 +65,63 @@ public class Driver {
 	public void close(){
 		driver.quit();
 	}
-	@Test(dataProvider="Driver")
-	public void test(String Exe,String ShName, String description) {   
+	@Test(priority=1,testName="Achievement Creation as Admin")
+	public void Achievement_Creation_as_Admin()
+	{
+		DriveExcel("Achievement Creation as Admin");
+	}
+	@Test(priority=2,testName="Register New User Account")
+	public void Register_New_User_Account(){
+		DriveExcel("Register New User Account");
+	}
+	@Test(priority=3,testName="Confirm Interactive Progress Map Display for New User")
+	public void Confirm_Interactive_Progress_Map_Display_for_New_User()
+	{
+		DriveExcel("Interactive Progress Map");
+	}
+	@Test(priority=4,testName="Navigate to S1, Earn Achievement")
+	public void Navigate_to_S1_Earn_Achievement(){
+		DriveExcel("S1, Earn Achievement");
+	}
+	@Test(priority=5,testName="Navigate to S2, Submit Achievement")
+	public void Navigate_to_S2_Submit_Achievement()
+	{
+		DriveExcel("S2, Submit Achievement");
+	}
+	@Test(priority=6,testName="Rejecting S2 as admin")
+	public void Rejecting_S2_as_admin(){
+		DriveExcel("Reject S2");
+	}
+	@Test(priority=7,testName="Navigate to S3, Submit Achievement")
+	public void Navigate_to_S3_Submit_Achievement()
+	{
+		DriveExcel("S3, Submit Achievement");
+	}
+	@Test(priority=8,testName="Authenticate as Administrator, Confirm S2")
+	public void Authenticate_as_Administrator_Confirm_S2(){
+		DriveExcel("Confirm S2");
+	}
+	@Test(priority=9,testName="Authenticate as User Confirm S1, S2, S3 earned in Student Profile, on Progress Map")
+	public void Authenticate_as_User_Confirm_S1_S2_S3_earned_in_Student_Profile_on_Progress_Map()
+	{
+		DriveExcel("earned in Student Profile");
+	}
+	@Test(priority=10,testName="Sequentially Disable all BadgeOS Plugins")
+	public void Sequentially_Disable_all_BadgeOS_Plugins(){
+		DriveExcel("Disable all BadgeOS Plugins");
+	}
+	@Test(priority=11,testName="Sequentially Enable Plugins")
+	public void Sequentially_Enable_Plugins(){
+		DriveExcel("Enable Plugins");
+	}
+	public void DriveExcel(String ShName){
 		setAuthorInfoForReports();
 		WriteExcel we = new WriteExcel();
 				try {                                                     
 					                                                                   
 			// driver = new FirefoxDriver();              
 			// dr.moveTheFile();           
-			if (Exe.equalsIgnoreCase("Yes")) {  
-				//dr.openBrowser();  
+			//dr.openBrowser();  
 				try {
 					ReadExcel re = new ReadExcel(driver);  
 					re.readExcelSheet(DRIVEREXCEL, ShName);             
@@ -106,8 +153,7 @@ public class Driver {
 					}  
 				ATUReports.add("", LogAs.FAILED	, new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
 				}     
-				
-			}   
+				   
 		}	                      
 			catch (Exception e) {       
        
@@ -115,13 +161,6 @@ public class Driver {
 			ATUReports.add("", LogAs.FAILED	, new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
 		} 
 				
-	}  
-		//////system.out.println(rows);
-	@DataProvider(name="Driver")
-	public Object[][] driver() throws BiffException, IOException
-	{
-		DataTable = ReadExcel.getTableArray();
-		return DataTable;
 	}
 	
 			 

@@ -2,8 +2,23 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test name="Test">
-    <classes>
-      <class name="pkge1.Driver"/>
-    </classes>
+  <classes>
+  <class name="pkge1.Driver">
+  <methods>
+  <include name="Register_New_User_Account"></include>
+  <!-- <include name="Achievement_Creation_as_Admin"></include>
+  <include name="Register_New_User_Account"></include>
+  <include name="Confirm_Interactive_Progress_Map_Display_for_New_User"></include>
+  <include name="Navigate_to_S1_Earn_Achievement"></include>
+  <include name="Navigate_to_S2_Submit_Achievement"></include>
+  <include name="Rejecting_S2_as_admin"></include>
+  <include name="Navigate_to_S3_Submit_Achievement"></include>
+  <include name="Authenticate_as_Administrator_Confirm_S2"></include>
+  <include name="Authenticate_as_User_Confirm_S1_S2_S3_earned_in_Student_Profile_on_Progress_Map"></include>
+  <include name="Sequentially_Disable_all_BadgeOS_Plugins"></include>
+  <include name="Sequentially_Enable_Plugins"></include> -->
+  </methods>
+  </class>
+  </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
