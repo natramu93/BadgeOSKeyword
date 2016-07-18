@@ -15,8 +15,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -54,15 +57,15 @@ public class Driver {
 	private void setAuthorInfoForReports() {
         ATUReports.setAuthorInfo("Automation Tester", Utils.getCurrentTime(),"1.0");
 	}
-	@BeforeClass
+	@BeforeMethod
 	public void init(){
-		//driver = new FirefoxDriver();
-		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
+		driver = new FirefoxDriver();
+		//System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+		//WebDriver driver = new ChromeDriver();
 		ATUReports.setWebDriver(driver);
 	 	ATUReports.indexPageDescription = "<br> Please change this <br/> <b>Can include Full set of HTML Tags</b>";
 	}
-	@AfterClass
+	@AfterMethod
 	public void close(){
 		driver.quit();
 	}
@@ -152,14 +155,14 @@ public class Driver {
 					}else { 
 						we.writeResult(RESULTEXCEL, EXP, NIL, NIL);	            
 					}  
-				ATUReports.add("", LogAs.FAILED	, new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
+				Assert.fail();
 				}     
 				   
 		}	                      
 			catch (Exception e) {       
        
 			e.printStackTrace();         
-			ATUReports.add("", LogAs.FAILED	, new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
+			Assert.fail();
 		} 
 				
 	}

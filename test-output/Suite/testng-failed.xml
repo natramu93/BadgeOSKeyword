@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="pkge1.Driver">
+        <methods>
+          <include name="Register_New_User_Account"/>
+          <include name="close"/>
+          <include name="Confirm_Interactive_Progress_Map_Display_for_New_User"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- pkge1.Driver -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

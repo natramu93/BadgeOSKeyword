@@ -51,14 +51,15 @@ public class ReadExcel {
 			Workbook wb = Workbook.getWorkbook(new File(destFile));
 			Sheet sheet = wb.getSheet(ShName);
 			int rows = sheet.getRows();
+			String desc = null;
 			 String met = null;
 			String prop = null;
 			String data = null;
 			for (int row = 0; row < rows; row++) {
-				
-				met = sheet.getCell(0, row).getContents();
-				prop = sheet.getCell(1, row).getContents();
-				data = sheet.getCell(2, row).getContents();
+				desc= sheet.getCell(0, row).getContents();
+				met = sheet.getCell(1, row).getContents();
+				prop = sheet.getCell(2, row).getContents();
+				data = sheet.getCell(3, row).getContents();
 				if(!met.equalsIgnoreCase("TC")){
 								
 				Workbook wb1 = Workbook.getWorkbook(new File(RESULTEXCEL));
@@ -68,7 +69,7 @@ public class ReadExcel {
 				if(chkExp1.equals(NIL))
 				{
 					driver.quit();
-					ATUReports.add(met, prop, data, "", false);
+					ATUReports.add(met, prop, "", "", false);
 					break; 
 					
 				}				 
@@ -79,12 +80,13 @@ public class ReadExcel {
 				
 				case "launchApp":
 					te.launchApp();
-					ATUReports.add(met, prop, data, "", false);
+					ATUReports.add(desc, data, "", "", false);
+					
 					break;
 					
 				case "clickByid":
 					te.clickByid(prop, data);
-					ATUReports.add(met, prop, data, "", false);
+					ATUReports.add(desc, prop, data, "", false);
 					break;		
 					
 				case "enterByid":
@@ -121,7 +123,7 @@ public class ReadExcel {
 					
 				case "clickByLink" :
 					te.clickByLink(prop,data);
-					ATUReports.add(met, prop, data, "", false);
+					ATUReports.add(desc, data, "", "", false);
 					break;
 					
 							
