@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
     <line>
       <![CDATA[STEP1]]>
@@ -70,58 +70,48 @@
     <line>
       <![CDATA[STEP23]]>
     </line>
+    <line>
+      <![CDATA[STEP24]]>
+    </line>
+    <line>
+      <![CDATA[STEP25]]>
+    </line>
+    <line>
+      <![CDATA[STEP26]]>
+    </line>
+    <line>
+      <![CDATA[STEP27]]>
+    </line>
+    <line>
+      <![CDATA[STEP28]]>
+    </line>
+    <line>
+      <![CDATA[STEP29]]>
+    </line>
+    <line>
+      <![CDATA[STEP30]]>
+    </line>
+    <line>
+      <![CDATA[STEP31]]>
+    </line>
+    <line>
+      <![CDATA[STEP32]]>
+    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="145750" started-at="2016-07-18T14:33:37Z" finished-at="2016-07-18T14:36:03Z">
+  <suite name="Suite" duration-ms="143771" started-at="2016-07-19T10:35:16Z" finished-at="2016-07-19T10:37:39Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="145750" started-at="2016-07-18T14:33:37Z" finished-at="2016-07-18T14:36:03Z">
+    <test name="Test" duration-ms="143771" started-at="2016-07-19T10:35:16Z" finished-at="2016-07-19T10:37:39Z">
       <class name="pkge1.Driver">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:pkge1.Driver@36d4b5c]" name="initialize" is-config="true" duration-ms="10654" started-at="2016-07-18T20:03:37Z" finished-at="2016-07-18T20:03:47Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:pkge1.Driver@36d4b5c]" name="initialize" is-config="true" duration-ms="14945" started-at="2016-07-19T16:05:16Z" finished-at="2016-07-19T16:05:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="init()[pri:0, instance:pkge1.Driver@36d4b5c]" name="init" is-config="true" duration-ms="24930" started-at="2016-07-18T20:03:47Z" finished-at="2016-07-18T20:04:12Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:pkge1.Driver@36d4b5c]" name="init" is-config="true" duration-ms="29843" started-at="2016-07-19T16:05:31Z" finished-at="2016-07-19T16:06:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="FAIL" signature="Register_New_User_Account()[pri:2, instance:pkge1.Driver@36d4b5c]" name="Register_New_User_Account" duration-ms="82243" started-at="2016-07-18T20:04:12Z" finished-at="2016-07-18T20:05:35Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.fail(Assert.java:101)
-	at pkge1.Driver.DriveExcel(Driver.java:160)
-	at pkge1.Driver.Register_New_User_Account(Driver.java:86)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="Register_New_User_Account()[pri:2, instance:pkge1.Driver@36d4b5c]" name="Register_New_User_Account" duration-ms="62224" started-at="2016-07-19T16:06:01Z" finished-at="2016-07-19T16:07:03Z">
           <reporter-output>
             <line>
               <![CDATA[STEP1]]>
@@ -165,18 +155,6 @@
             <line>
               <![CDATA[STEP14]]>
             </line>
-          </reporter-output>
-        </test-method> <!-- Register_New_User_Account -->
-        <test-method status="PASS" signature="close()[pri:0, instance:pkge1.Driver@36d4b5c]" name="close" is-config="true" duration-ms="793" started-at="2016-07-18T20:05:35Z" finished-at="2016-07-18T20:05:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method status="PASS" signature="init()[pri:0, instance:pkge1.Driver@36d4b5c]" name="init" is-config="true" duration-ms="12748" started-at="2016-07-18T20:05:35Z" finished-at="2016-07-18T20:05:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="Confirm_Interactive_Progress_Map_Display_for_New_User()[pri:3, instance:pkge1.Driver@36d4b5c]" name="Confirm_Interactive_Progress_Map_Display_for_New_User" duration-ms="13583" started-at="2016-07-18T20:05:48Z" finished-at="2016-07-18T20:06:02Z">
-          <reporter-output>
             <line>
               <![CDATA[STEP15]]>
             </line>
@@ -205,8 +183,47 @@
               <![CDATA[STEP23]]>
             </line>
           </reporter-output>
+        </test-method> <!-- Register_New_User_Account -->
+        <test-method status="PASS" signature="close()[pri:0, instance:pkge1.Driver@36d4b5c]" name="close" is-config="true" duration-ms="1780" started-at="2016-07-19T16:07:03Z" finished-at="2016-07-19T16:07:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="PASS" signature="init()[pri:0, instance:pkge1.Driver@36d4b5c]" name="init" is-config="true" duration-ms="17002" started-at="2016-07-19T16:07:05Z" finished-at="2016-07-19T16:07:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="Confirm_Interactive_Progress_Map_Display_for_New_User()[pri:3, instance:pkge1.Driver@36d4b5c]" name="Confirm_Interactive_Progress_Map_Display_for_New_User" duration-ms="16462" started-at="2016-07-19T16:07:22Z" finished-at="2016-07-19T16:07:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP24]]>
+            </line>
+            <line>
+              <![CDATA[STEP25]]>
+            </line>
+            <line>
+              <![CDATA[STEP26]]>
+            </line>
+            <line>
+              <![CDATA[STEP27]]>
+            </line>
+            <line>
+              <![CDATA[STEP28]]>
+            </line>
+            <line>
+              <![CDATA[STEP29]]>
+            </line>
+            <line>
+              <![CDATA[STEP30]]>
+            </line>
+            <line>
+              <![CDATA[STEP31]]>
+            </line>
+            <line>
+              <![CDATA[STEP32]]>
+            </line>
+          </reporter-output>
         </test-method> <!-- Confirm_Interactive_Progress_Map_Display_for_New_User -->
-        <test-method status="PASS" signature="close()[pri:0, instance:pkge1.Driver@36d4b5c]" name="close" is-config="true" duration-ms="768" started-at="2016-07-18T20:06:02Z" finished-at="2016-07-18T20:06:03Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:pkge1.Driver@36d4b5c]" name="close" is-config="true" duration-ms="1154" started-at="2016-07-19T16:07:38Z" finished-at="2016-07-19T16:07:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
