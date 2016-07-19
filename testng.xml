@@ -6,7 +6,6 @@
   <class name="pkge1.Driver">
   <methods>
   <include name="Register_New_User_Account"></include>
-  <include name="Confirm_Interactive_Progress_Map_Display_for_New_User"></include>
   <!-- <include name="Achievement_Creation_as_Admin"></include>
   <include name="Register_New_User_Account"></include>
   <include name="Confirm_Interactive_Progress_Map_Display_for_New_User"></include>
