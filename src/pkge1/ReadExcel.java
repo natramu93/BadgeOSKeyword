@@ -117,7 +117,7 @@ public class ReadExcel {
 					break;
 					
 				case "clickByXpath" :
-					te.clickByXpath(prop,data);
+					te.clickByXpath(desc, prop,data);
 					ATUReports.add(met, prop, data, "", false);
 					break;	
 					
@@ -128,7 +128,7 @@ public class ReadExcel {
 					
 							
 				case "clickByXPath" :
-					te.clickByXPath(prop,data);
+					te.clickByXPath(desc, prop,data);
 					ATUReports.add(met, prop, data, "", false);
 					break;
 					

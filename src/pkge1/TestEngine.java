@@ -1355,15 +1355,19 @@ public void enterByxPath(String pr, String dt) throws InterruptedException {
 		
 	}
 		
-	public void clickByXPath(String pr, String dt) throws InterruptedException, IOException {
+	public void clickByXPath(String desc, String pr, String dt) throws InterruptedException, IOException {
 		
 		//Thread.sleep(5000);
-		
+		try{
 		WebDriverWait ww = new WebDriverWait(driver, 10);
 		ww.until(ExpectedConditions.presenceOfElementLocated(By.xpath(pr)));
 		
 		driver.findElement(By.xpath(pr)).click();
-		 
+		}
+		catch (Exception e)
+		{
+			Assert.fail(desc);
+		}
 		//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
 	}
@@ -2377,17 +2381,21 @@ public void clickByCSS(String pr, String dt)throws InterruptedException, IOExcep
 	
 	
 	
-public void clickByXpath(String pr, String dt)throws InterruptedException, IOException   {
+public void clickByXpath(String desc, String pr, String dt)throws InterruptedException, IOException   {
 
 	
-	
+	try{
 	WebElement we = driver.findElement(By.xpath(pr));
 	WebDriverWait ww = new WebDriverWait(driver, 10);
 	
 	ww.until(ExpectedConditions.presenceOfElementLocated(By.xpath(pr)));	
 	Actions act = new Actions(driver);
 	act.click(we).build().perform();
-		
+	}
+	catch(Exception e)
+	{
+		Assert.fail(desc);
+	}
 	}
 	
 	
