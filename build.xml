@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!DOCTYPE project []>
 <project name="Selenium" default="usage" basedir=".">
-<!-- ========== Initialize Properties =============================== -->
+<!-- ========== Initialize Properties ============================ -->
 <property environment="env"/>
 <property name="ws.home" value="${basedir}"/>
 <property name="ws.jars" value="${basedir}/jars"/>
